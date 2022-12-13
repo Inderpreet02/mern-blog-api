@@ -41,11 +41,6 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoriesRoute);
 
-app.get('/', (req, res) => {
-  res.status(200).send({
-    message: "hello"
-  })
-})
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
